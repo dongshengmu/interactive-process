@@ -1,3 +1,8 @@
+/*
+ * File used by pygdb sample.
+ * gcc -g
+ */
+
 #include "stdio.h"
 
 typedef struct fpc {
