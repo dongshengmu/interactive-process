@@ -19,17 +19,20 @@ from pager import getwidth
 #
 # Colored print
 #
-def print_green(s):
-    print(colored(s, 'green'))
+def print_green(s, end='\n'):
+    print(colored(s, 'green'), end=end)
 
-def print_red(s):
-    print(colored(s, 'red'))
+def print_red(s, end='\n'):
+    print(colored(s, 'red'), end=end)
 
-def print_blue(s):
-    print(colored(s, 'blue'))
+def print_magenta(s, end='\n'):
+    print(colored(s, 'magenta'), end=end)
 
-def print_cyan(s):
-    print(colored(s, 'cyan'))
+def print_blue(s, end='\n'):
+    print(colored(s, 'blue'), end=end)
+
+def print_cyan(s, end='\n'):
+    print(colored(s, 'cyan'), end=end)
 
 def print_no_newline(s):
     print(s, end='')

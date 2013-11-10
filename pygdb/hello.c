@@ -15,6 +15,7 @@ typedef struct mod_table {
 } mod_table_t;
 
 
+fpc_t fpc = {0};
 mod_table_t toolkit = {
     item_count: 0x1f,
     name:       "Module toolkit"
@@ -40,10 +41,14 @@ int main(void)
 {
     int mylocal = 500;
 
-    printf("Hello, Python controlled GDB for white-box test.\n");
+    setbuf(stdout, NULL);
+    
+    printf("\nHello, this is a Python controlled GDB for white-box test.\n");
+    //fflush(stdout);
+    
     ukern_module_init();
     printf("mylocal is %d\n", mylocal);
-    cmfwdd_pic_online(NULL);
+    cmfwdd_pic_online(&fpc);
     return mylocal * 4;
 }
 

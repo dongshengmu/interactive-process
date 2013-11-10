@@ -7,14 +7,14 @@
 	objects = {
 
 /* Begin PBXFileReference section */
+		D2C71CA1182CBC0B00C7BFA3 /* devvm_provision.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = devvm_provision.py; sourceTree = "<group>"; };
+		D2C71CA3182CBC1700C7BFA3 /* vm_prov.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = vm_prov.py; sourceTree = "<group>"; };
 		D2F2B61018256D13000B5FCC /* pygdb.py */ = {isa = PBXFileReference; lastKnownFileType = text.script.python; path = pygdb.py; sourceTree = "<group>"; };
 		D2F2B61B18256E09000B5FCC /* util.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = util.py; sourceTree = "<group>"; };
 		D2F2B61C18256E09000B5FCC /* srx_cmd.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = srx_cmd.py; sourceTree = "<group>"; };
 		D2F2B61D18256E09000B5FCC /* pager.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = pager.py; sourceTree = "<group>"; };
 		D2F2B61E18256E09000B5FCC /* termcolor.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = termcolor.py; sourceTree = "<group>"; };
 		D2F2B62018256E42000B5FCC /* interact.py */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.python; path = interact.py; sourceTree = "<group>"; };
-		D2F2B6271825E89E000B5FCC /* a.out */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.executable"; path = a.out; sourceTree = "<group>"; };
-		D2F2B6281825E89E000B5FCC /* a.out.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; path = a.out.dSYM; sourceTree = "<group>"; };
 		D2F2B6291825E89E000B5FCC /* hello.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hello.c; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -35,6 +35,8 @@
 				D2F2B61D18256E09000B5FCC /* pager.py */,
 				D2F2B62018256E42000B5FCC /* interact.py */,
 				D2F2B61E18256E09000B5FCC /* termcolor.py */,
+				D2C71CA3182CBC1700C7BFA3 /* vm_prov.py */,
+				D2C71CA1182CBC0B00C7BFA3 /* devvm_provision.py */,
 				D2F2B61118256D13000B5FCC /* Supporting Files */,
 			);
 			path = pygdb;
@@ -43,8 +45,6 @@
 		D2F2B61118256D13000B5FCC /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				D2F2B6271825E89E000B5FCC /* a.out */,
-				D2F2B6281825E89E000B5FCC /* a.out.dSYM */,
 				D2F2B6291825E89E000B5FCC /* hello.c */,
 			);
 			name = "Supporting Files";
