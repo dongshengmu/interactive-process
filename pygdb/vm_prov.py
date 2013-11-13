@@ -11,6 +11,24 @@ A utility to provision a DevVM based on the parameters
 specified in devvm_provision Data Base.
     
 Syntax: vm_prov.py name-of-new-vm
+
+To clone a DevVM from a existing VM on the same server:
+    define a DevVM in devvm_provision.py, with the VM specific parameters
+    ./vm_prov.py new-vm-name existing-vm
+
+To create a DevVM on a new physical server without any existing DevVM,
+we clone the srxbuild06-DevVM, whose disk img is at mounted /home/VMs.
+    yum install "*guestfs*", to get virt-edit
+    mount -t nfs -o rw cougar-01:/home/VMs /home/VMs
+    mkdir /home/localVMs
+    cd /home/localVMs
+    scp xxx@svl-junos-d013:/homes/dmu/dev/pygdb/*.py .
+    scp xxx@cougar-evl02:/etc/libvirt/qemu/srxbuild06-DevVM.xml .
+    virsh define srxbuild06-DevVM
+    define the new DevVM in devvm_provision.py
+    ./vm_prov.py new-vm-name srxbuild06-DevVM
+    virsh undefine srxbuild06-DevVM
+
 """
 
 import re
